@@ -4,6 +4,7 @@ This application is a dice game
 
 
 Rules
+
 There are three rounds
 
 - If any of the players two dice comes up as a 1 then the score for that round for the player
