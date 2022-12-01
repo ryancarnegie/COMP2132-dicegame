@@ -1,0 +1,317 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  min-height: 100vh;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Gravity-Regular";
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  src: url("../fonts/Gravity-Regular.otf");
+  font-family: "Gravity-Regular";
+}
+body {
+  background: linear-gradient(to right, #3f5efb, rgb(163, 231, 192));
+}
+
+:root {
+  --primary-red: #fc466b;
+  --primary-blue: #3f5efb;
+  --wrapper-bg: #ecf0e4;
+}
+
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--wrapper-bg);
+  min-height: 100vh;
+}
+
+#welcome {
+  color: rgb(59, 69, 72);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5em;
+  padding: 1em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+  z-index: 100;
+  padding: 20px;
+  border-radius: 30px;
+  height: 50vh;
+  justify-content: center;
+  line-height: 35px;
+}
+
+.fade-image {
+  animation: fadeOut 1s forwards;
+  -webkit-animation: fadeOut 1s forwards;
+  -moz-animation: fadeOut 1s forwards;
+  -o-animation: fadeOut 1s forwards;
+  -ms-animation: fadeOut 1s forwards;
+}
+
+#summary {
+  padding: 10px;
+  border: 3px solid white;
+}
+
+header {
+  background-color: cornflowerblue;
+  padding: 2em;
+}
+header h1 {
+  margin: 20px;
+  font-size: 6rem;
+  color: rgb(208, 214, 218);
+  color: #787878;
+  background-color: rgb(241, 255, 201);
+  border: 3px solid black;
+  box-shadow: 20px 10px 25px black;
+  border: 3px solid black;
+}
+header nav {
+  padding: 3em;
+  background-color: darkred;
+}
+header nav ul {
+  padding: 1em;
+  background-color: burlywood;
+}
+header nav a {
+  padding: 1em;
+  background-color: rgb(120, 99, 72);
+}
+
+.main-dice-container {
+  margin: 0px 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+.main-dice-container img {
+  border: solid 2px black;
+  border-radius: 12px;
+}
+
+main {
+  background-color: rgb(170, 174, 170);
+}
+main p {
+  font-size: 2.5em;
+  color: rgb(208, 214, 218);
+}
+main img {
+  width: 100px;
+  height: 100px;
+}
+main .img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+main #top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em;
+  border: solid 1px black;
+  margin-bottom: 2em;
+  border-radius: 5px;
+}
+
+/* this targets Player One and Player Two p tags specifically */
+.main-dice-container p {
+  padding-bottom: 1em;
+}
+
+#score-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #3f5efb;
+  padding: 2em;
+  border: solid 1px black;
+  margin: 1em 0;
+  border-radius: 12px;
+}
+
+.score-container p {
+  font-size: 1.3em;
+}
+
+#section-howtoplay {
+  padding: 1em 0;
+  text-align: left;
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 23px;
+  padding-top: 5em;
+}
+
+#section-buttons {
+  display: flex;
+  max-width: 30%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+button {
+  padding: 1em;
+  background-color: #3f5efb;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1em;
+  color: white;
+  letter-spacing: 1px;
+  border: 1px solid blue;
+  margin-top: 1em;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+#firstscore, #secondscore {
+  font-size: 1.1em;
+  color: black;
+}
+
+.spacebg {
+  background-image: url("../images/spacebackground.jpg");
+  background-position: center;
+  background-size: cover;
+  min-width: 100px;
+  align-items: center;
+  height: auto;
+  border-radius: 12px;
+}
+
+.shake {
+  -webkit-animation: shake 0.5s infinite;
+          animation: shake 0.5s infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(-80deg);
+  }
+  100% {
+    transform: rotate(80deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(-80deg);
+  }
+  100% {
+    transform: rotate(80deg);
+  }
+}
+/* fadeIn and fadeOut keyframes taken from https://blog.hubspot.com/website/css-fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

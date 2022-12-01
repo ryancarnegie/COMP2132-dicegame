@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>COMP 2132 Final Project - Dice Roll</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="header-h1"></h1>
+    </header>
+    <nav>
+        <p id="nav"></p>
+    </nav>
+
+    <div id="wrapper">
+        <div id="welcome">
+            <p id="rules">
+            <h3>The Rules for Dice</h3><br>
+            <ol>
+                <li>There are three rounds total:</li>
+                <li>Each round, you and a computer opponent roll two dice.</li>
+                <li>You earn a score based on the sum of the dice.
+                    <ul>
+                        <li>If either player rolls a 1, the players score for that round is 0.</li>
+                        <li>If either player rolls a double of the same number (other than 1), your score for that round
+                            is multipled x2.</li>
+                        <li>If the previous conditions are not met, your score for that round is the sum of two dice
+                            values.</li>
+                    </ul>
+                </li>
+                <li>After three rounds, the player with the highest total score wins!</li>
+            </ol>
+            <button id="button-play">Let's play!</button>
+            </p>
+
+        </div>
+        <main>
+
+            <section id="top-section">
+                <!-- player 1 div -->
+                <div class="main-dice-container">
+                    <p>Player One</p>
+                    <p>Your Dice</p>
+                    <div class="img-container">
+                        <img />
+                        <img />
+                    </div>
+                </div>
+
+                <!-- player 2 div -->
+                <div class="main-dice-container">
+                    <p>Player Two</p>
+                    <p>Opponent Dice</p>
+                    <div class="img-container">
+                        <img />
+                        <img />
+                    </div>
+                </div>
+            </section>
+
+            <!-- the New Game and Roll Dice buttons -->
+            <section id="section-buttons">
+                <button onclick="reload()" id="newgame">New Game</button>
+                <button onclick="randomDiceFunction()" id="reroll">Roll Dice</button>
+            </section>
+
+            <!-- the score section -->
+            <section id="score-section">
+                <div class="score-container">
+                    <p>Your Score</p>
+                    <p id="firstscore"></p>
+                    <p id="firsttotalscore">Total Score:</p>
+                </div>
+                <div class="score-container">
+                    <p>Opponent Score</p>
+                    <p id="secondscore"></p>
+                    <p id="secondtotalscore">Total Score:</p>
+                </div>
+            </section>
+
+            <section id="summary">
+                <p class="summary-test"></p>
+            </section>
+
+
+            <!-- the rules section -->
+            <section id="section-howtoplay">
+
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p id="footer-p">Ryan Carnegie</p>
+        
+    </footer>
+    <script type="text/javascript" src="scripts/script.js" defer charset="UTF-8">
+        randomDiceFunction();
+    </script>
+</body>
+
+</html>

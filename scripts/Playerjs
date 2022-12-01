@@ -1,0 +1,21 @@
+
+class Player {
+  score = 0;
+
+  constructor(score) {
+    this.score = score;
+  }
+
+  addScore(addPlayerScore) {
+    this.addPlayerScore = addPlayerScore;
+  }
+  setScore(score) {
+    this.addPlayerScore = score;
+  }
+}
+
+class Dice {
+  cosntructor(dice) {
+    this.dice = dice;
+  }
+}
