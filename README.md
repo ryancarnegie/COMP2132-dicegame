@@ -1,4 +1,4 @@
-# COMP2132-dicegame
+Dicegame
 
 This application is a dice game 
 
